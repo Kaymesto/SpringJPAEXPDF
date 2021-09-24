@@ -48,7 +48,7 @@ public class CommandeServiceImpl implements CommandeService {
 
 	@Override
 	public List<Commande> getClientCommandes(Long id) {
-		return commandeRepository.findByclientId(id);
+		return commandeRepository.findByClientId(id);
 	}
 
 }
