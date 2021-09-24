@@ -34,6 +34,11 @@ public class CommandeController {
 		return commandeService.findOne(id);
 	}
 	
+	@GetMapping("/client/{id}")
+	public List<Commande> getClientCommandes(@PathVariable Long id){
+		return commandeService.getClientCommandes(id);
+	}
+	
 	@PostMapping("create")
 	public Commande create(@RequestBody Commande commande) {
 		return commandeService.create(commande);

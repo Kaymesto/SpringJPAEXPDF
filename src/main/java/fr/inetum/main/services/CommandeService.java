@@ -16,4 +16,6 @@ public interface CommandeService {
 	
 	public void delete(Long id);
 
+	public List<Commande> getClientCommandes(Long id);
+
 }

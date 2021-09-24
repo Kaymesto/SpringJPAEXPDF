@@ -46,4 +46,9 @@ public class CommandeServiceImpl implements CommandeService {
 		commandeRepository.deleteById(id);
 	}
 
+	@Override
+	public List<Commande> getClientCommandes(Long id) {
+		return commandeRepository.findByclientId(id);
+	}
+
 }
